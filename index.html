@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.cdnfonts.com/css/red-hat-display" rel="stylesheet">
+                <link rel="stylesheet" href="./assets/css/css.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<style>
+  
+  @import url('https://fonts.cdnfonts.com/css/red-hat-display');
+* {
+  font-family: 'Red Hat Display', sans-serif;
+ 
+
+}
+
+ /* width */
+ ::-webkit-scrollbar {
+  width: 0.6vw;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background:#371990;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #64ce22;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #635252;
+}
+html {
+  margin-bottom: 140vh;
+}
+body {
+  background-color: #371990;
+  background-position: 0%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-image: url(./assets/img/dddd.png);
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+  font-size: 22px;
+}
+header {
+  
+  height: 16vh;
+  display: flex;
+  align-items: center;
+  
+}
+.desktop {
+ 
+  width: 85vw;
+  margin: auto;
+  display: flex;
+gap: 40px;
+align-items: center;
+justify-content: end;
+}
+.desktop > a:nth-child(4) {
+  background-color: white;
+  color: black;
+  font-weight: 400;
+  padding: 6px 25px;
+  border-radius: 40px;
+}
+.landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 150px;
+}
+.landing > h1 {
+  font-size: 100px;
+  color: #55DF00;
+}
+.landing p {
+  color: white;
+  font-weight: 300;
+  font-size: 22px;
+  width: 60vh;
+}
+.landing > a {
+  background-color: #55DF00;
+  color: black;
+  margin-top: 2vh;
+  font-weight: 400;
+  padding: 6px 45px;
+ 
+}
+img {
+  width: 100%;
+  margin-top: 10vh;
+}
+.seperation {
+  height: 20vh;
+  margin-top: 23vh;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./assets/img/Group\ 6.png);
+  
+}
+.seperation > a {
+  color: #371990;
+ margin-top: 2vh;
+  font-size: 50px;
+  font-weight: 400;
+  padding: 6px 45px;
+ 
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.hamb {
+  display: none;
+}
+
+.soon {
+  width: 50%;
+  
+}
+.add {
+  position: absolute;
+  width: 100%;
+  top: 130%;
+  
+  z-index: -1;
+}
+.booking {
+  display: flex;
+  margin-top: 10vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.booking > h1 {
+  font-size: 50px;
+  font-weight: 600;
+  color: white;
+  
+  
+}
+.images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.images > img {
+width: 25%;
+}
+.book {
+  display: flex;
+  gap: 22.3vw;
+  margin-top: -43px;
+  
+font-size: 25px;
+color: black;
+
+}
+.book > a {
+  font-weight: 400;
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+}
+.booking p {
+  color: white;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 10vh;
+  font-size: 22px;
+  width: 80vh;
+}
+.schedule {
+  width: 50%;
+  margin-top: 30vh;
+}
+.months {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.months > h1 {
+  color: white;
+  margin-top: 10vh;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.months > h1:hover {
+  background-color: white;
+  color: black;
+  padding: 10px;
+}
+
+.tile {
+  height: 50vh;
+  background-color: #635252;
+  width: 60vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dj {
+  flex: 1;
+}
+.writing {
+  flex: 1;
+}
+.writing p {
+  color: white;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 10vh;
+  font-size: 22px;
+  width: 80vh;
+}
+.writing > h1 {
+  color: white;
+  margin-top: 10vh;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 15px;
+  }
+  .desktop {
+    display: none;
+  }
+  header {
+  
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    
+  }
+  .hamb {
+    
+  width: 100vh;
+  
+  display: flex;
+
+justify-content: space-between;
+align-items: center;
+
+  }
+  .hamb > img {
+width: 4.5vh;
+
+margin: 0;
+  }
+  .landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 150px;
+  }
+  .landing > h1 {
+    font-size: 75px;
+    color: #55DF00;
+  }
+  .landing p {
+    color: white;
+    font-weight: 300;
+    font-size: 17px;
+    width: 45vh;
+  }
+  .landing > a {
+    background-color: #55DF00;
+    color: black;
+    margin-top: 2vh;
+    font-weight: 400;
+    padding: 6px 45px;
+   
+  }
+  .seperation {
+    display: none;
+    
+  }
+  .seperation > a {
+    color: #371990;
+   margin-top: 2vh;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
+    padding: 6px 45px;
+   
+  }
+  .soon {
+    width: 100%;
+    margin-top: 40vh;
+  }
+}
+</style>
+</head>
+<body>
+  <header>
+    <nav class="hamb">
+      <a href="home">home</a>
+      <img src="./assets/img/Group 8.png" alt="">
+    </nav>
+    <nav class="desktop">
+<a href="">home</a>
+<a href="">booking</a>
+<a href="">community</a>
+<a href="">join now</a>
+  </nav>
+</header>
+<main>
+  <section class="landing">
+    <h1>EXPLORE <br > <span style="color: white;">NEONET</span></h1>
+    <p>your ultimate hub for exploring, booking, and connecting with the world's most exhilarating musical festivals. Discover the latest festival lineups, secure your tickets effortlessly, elevate your festival experience to new heights.</p>
+<a href="">Dive</a>
+  </section>
+  <section class="seperation">
+    <a href="">JOIN US TODAY FOR A WORLD OF EXCITEMENT</a>
+  </section>
+  <img class="soon" src="./assets/img/COMING SOON.png" alt="">
+  <section class="booking">
+    <h1><span style="color: #55DF00;">01</span> BOOKING</h1>
+    <div class="images">
+      <img src="./assets/img/Group 18.png" alt="">
+      <img src="./assets/img/Group 16.png" alt="">
+      <img src="./assets/img/Group 17.png" alt="">
+      
+    </div>
+    <p>Secure your spot at the most sought-after musical festivals seamlessly through NEONET's easy-to-use booking platform. Browse various ticket options, select preferred packages, and book your festival passes with just a few clicks.</p>
+    <div class="book">
+      <a href="">Book</a>
+    <a href="">Book</a>
+    <a href="">Book</a>
+    </div>
+    
+    
+    
+  </section>
+  <img class="schedule" src="./assets/img/SCHEDULE.png" alt="">
+  <section class="booking">
+    <h1><span style="color: #55DF00;">02</span> SCHEDULE</h1>
+    <div class="months">
+      <h1><span style="color: #55DF00;">11.</span> NOV</h1>
+      <h1><span style="color: #55DF00;">12.</span> DEC</h1>
+      <h1><span style="color: #55DF00;">01.</span> JAN</h1>
+      <h1><span style="color: #55DF00;">02.</span> FEB</h1>
+      <h1><span style="color: #55DF00;">03.</span> MAR</h1>
+      
+    </div>
+    
+    <div class="tile">
+      <div class="dj">
+        
+      </div>
+      <div class="writing">
+<h1><span style="color: #55DF00;">NIGHT</span>RAVE</h1>
+<p>Get ready to groove at the hottest DJ party in town! Join us for an electrifying night of pulsating beats, dynamic rhythms, and an unforgettable music experience that will keep you on your feet all night long.</p>
+      </div>
+    </div>
+    
+    
+    
+  </section>
+</main>
+<img class="add" src="./assets/img/3.jpeg" alt="">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
